@@ -1,0 +1,1 @@
+Admin dashboard project for The Odin Project. Mainly working with CSS Grid to layout a typical dashboard page.

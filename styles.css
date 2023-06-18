@@ -16,8 +16,8 @@
 .sidebar {
   background-color: rgb(51, 78, 102);
   display: grid;
-  grid-column: 1fr;
-  grid-row: 1 / 4;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1 / 4;
   grid-area: sidebar;
 }
 
@@ -32,11 +32,17 @@
   gap: 20px;
 }
 
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header {
   background-color: rgb(34, 47, 58);
   display: grid;
-  grid-column: 1fr;
-  grid-row: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-area: header;
 }
 
@@ -84,8 +90,8 @@
 .main-content {
   background-color: rgb(41, 57, 70);
   display: grid;
-  grid-column: 3fr 1fr;
-  grid-row: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-area: main;
   grid-template-areas: 
   "projects announcements"
@@ -94,24 +100,20 @@
 
 .projects {
   display: grid;
-  grid-column: 1fr;
-  grid-row: auto 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   gap: 15px;
   grid-area: projects;
 }
 
 .projects-wrapper {
   display: grid;
-  grid-column: repeat(autofill, minmax(300px, 1fr));
-  grid-row: repeat(autofill, 200px);
+  grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+  grid-template-rows: repeat(autofill, 200px);
   gap: 20px;
 }
 
 .project {
-  background-color: rgb(45, 93, 134);
-}
-
-.announcement {
   background-color: rgb(45, 93, 134);
 }
 
@@ -123,10 +125,10 @@
 }
 
 .trending {
-  background-color: rgb(45, 93, 134);
   display: flex;
   flex-direction: column;
   gap: 15px;
+  grid-area: trending;
 }
 
 .actions {
@@ -151,4 +153,241 @@
   display: flex;
   justify-content: center;
   background-color: rgb(34, 47, 58);
+}
+
+.sidebar > * {
+  padding-left: 10%;
+}
+
+.sidebar-list {
+  margin-top: 30px;
+}
+
+.sidebar-link {
+  width: max-content;
+}
+
+.header {
+  padding: 5px 40px;
+}
+
+.search-input {
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.header-bottom {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.main-content {
+  padding: 15px;
+}
+
+.announcement {
+  padding: 15px;
+}
+
+.announcement-title {
+  margin-bottom: 10px;
+}
+
+.project {
+  padding: 15px;
+}
+
+.actions {
+  margin-top: 35px;
+}
+
+.project-title {
+  margin-bottom: 10px;
+}
+
+.announcements,
+.trending {
+  margin-left: 20px;
+}
+
+.header-link-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.announcements-wrapper,
+.trending-wrapper {
+  margin-right: 15px;
+  padding: 25px;
+}
+
+.announcement,
+.trending-item {
+  padding-bottom: 15px;
+}
+
+.trending {
+  margin-top: 15px;
+}
+
+.trending-name {
+  margin-bottom: 5px;
+}
+
+.announcement-title {
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.user-info {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.greet {
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-link-button {
+  font-weight: bold;
+}
+
+.trending-name {
+  font-weight: bold;
+}
+
+.container {
+  border: 2px solid;
+}
+
+.sidebar {
+  border-right: 2px solid;
+}
+
+.logo {
+  border-bottom: 2px dashed;
+}
+
+.header {
+  border-bottom: 2px solid;
+}
+
+.search-input {
+  border: none;
+  border-radius: 15px;
+}
+
+.header-link-button {
+  border: none;
+  border-radius: 25px;
+}
+
+.project {
+  border-left: 6px solid;
+  border-radius: 5px;
+}
+
+.action-button {
+  border: none;
+}
+
+.announcements-wrapper,
+.trending-wrapper {
+  border-radius: 5px;
+}
+
+.announcement:not(:last-child),
+.trending-item:not(:last-child) {
+  border-bottom: 2px solid;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.search-input {
+  outline: none;
+}
+
+.notifications {
+  cursor: pointer;
+}
+
+.user-info > * {
+  cursor: pointer;
+}
+
+.header-link-button {
+  outline: none;
+  cursor: pointer;
+}
+
+.action-button {
+  cursor: pointer;
+}
+
+.main-content {
+  overflow: auto;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+  color:rgb(45, 93, 134)
+}
+
+.search-input:focus {
+  border: 2px solid rgb(45, 93, 134);
+}
+
+.header-link-button:hover,
+.header-link-button:focus {
+  border: 2px solid rgb(45, 93, 134);
+  background-color: rgb(51, 78, 102);
+}
+
+
+.sidebar-link {
+  color: black;
+}
+
+.search-input {
+  color: black;
+  background-color: rgb(45, 93, 134);
+}
+
+.header-link-button {
+  background-color: rgb(45, 93, 134);
+}
+
+.action-button {
+  background-color: transparent;
+}
+
+.announcements-wrapper,
+.trending-wrapper {
+  background-color: rgb(45, 93, 134);
+}
+
+.project {
+  background-color: rgb(45, 93, 134);
 }

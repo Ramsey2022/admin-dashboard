@@ -15,11 +15,24 @@
   background-color: rgb(51, 78, 102);
   display: grid;
   grid-row: 1 / 4;
-  gap: 15px;
+  place-items: center;
 }
 
 .nav {
+  font-size: 20px;
+  font-weight: bold;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
 
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 .header {
@@ -29,7 +42,31 @@
 }
 
 .notification-bar {
+  display: flex;
+  justify-content: space-between;
+}
 
+.notification-bar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header-links {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.header-links ul{
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.greeting {
+  display: flex;
+  gap:15px;
+  padding-top: 10px;
 }
 
 .main-content {

@@ -10,125 +10,229 @@
   <div class="container">
 
     <div class="sidebar">
+      <div class="logo">
+        logo
+        <h1 class="title">Dashboard</h1>
+      </div>
 
       <div class="nav">
-        <div class="logo">logo</div>
-        <div class="dash-header">Dashboard</div>
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-
-        <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+        <ul class="sidebar-list">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Profile</a>
+          </li>
+          <li>
+            <a href="">Messages</a>
+          </li>
+          <li>
+            <a href="">History</a>
+          </li>
+          <li>
+            <a href="">Tasks</a>
+          </li>
+          <li>
+            <a href="">Communities</a>
+          </li>
         </ul>
       </div>
 
+      <div class="setting-list">
+        <ul class="sidebar-list">
+          <li>
+            <a href="">Settings</a>
+          </li>
+          <li>
+            <a href="">Support</a>
+          </li>
+          <li>
+            <a href="">Privacy</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="header">
 
       <div class="notification-bar">
-        <div class="search-bar">searchbar</div>
-        <ul>
-          <li>bell</li>
-          <li>profile-pic</li>
-          <li>Morgan Oakley</li>
-        </ul>
+        <div class="search-bar">
+          <label for="search" class="search-label"></label>
+          <input type="search"
+          name="search"
+          id="search"
+          class="search-input" />
+        </div>
+        <div class="notifications">
+          icon
+        </div>
+        <div class="user-info">
+          profile-pic
+          <p>Morgan Oakley</p>
+        </div>
       </div>
 
-      <div class="greeting">
-        <div class="profile-pic">picture</div>
-        <p>Hi there,</p>
-        <p>Morgan Oakley(@morgan)</p>
-      </div>
+      <div class="header-bottom">
+        <div class="user-info-long">
+          <div>profile-pic</div>
 
-      <div class="header-links">
-        <ul>
-          <li>New</li>
-          <li>Upload</li>
-          <li>Share</li>
-        </ul>
-      </div>
+          <div class="greeting">
+            <p class="greet">Hi there,</p>
+            <p class="name">Morgan Oakley(@morgan)</p>
+          </div>
+        </div>
 
-    </div>
-
-    <div class="main-content">
-
-      <div class="main-content-titles">Your Projects</div>
-
-      <div class="main-content-titles">Announcements</div>
-
-      <div class="card">
-        <p class="title">Super Cool Project</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="card">
-        <p class="title">Less Cool Project</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="card">
-        <p class="title">Impossible App</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="card">
-        <p class="title">Easy Peasy App</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="card">
-        <p class="title">Ad Blocker</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="card">
-        <p class="title">Money Maker</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-      </div>
-
-      <div class="announcement-card">
-        <p class="title">Site Maintenance</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-
-        <p class="title">Community Share Day</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-
-        <p class="title">Updated Privacy Policy</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-      </div>
-
-      <div class="main-content-titles">Trending</div>
-
-      <div class="trending-card">
-        <div class="people">
-          <p class="handle">@tegan</p>
-          <p>World Peace Builder</p>
-
-          <p class="handle">@morgan</p>
-          <p>Super Cool Project</p>
-
-          <p class="handle">@Kendall</p>
-          <p>Life Changing App</p>
-
-          <p class="handle">@alex</p>
-          <p>No Traffic Maker</p>
+        <div class="header-links">
+          <button type="button" class="header-link-button">New</button>
+          <button type="button" class="header-link-button">Upload</button>
+          <button type="button" class="header-link-button">Share</button>
         </div>
       </div>
     </div>
 
-    <div class="footer">
-      <p>Copyright © The Odin Project 2023</p>
-    </div>
+    <div class="main-content">
 
-  </div>
+      <div class="projects">
+        <h2>Your Projects</h2>
+        <div class="projects-wrapper">
+
+          <div class="project">
+            <h3 class="project-title">Super Cool Project</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Less Cool Project</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Impossible App</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Easy Peasy App</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Ad Blocker</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">Money Maker</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            <div class="actions">
+              <button type="button" class="action-button">star</button>
+              <button type="button" class="action-button">eye</button>
+              <button type="button" class="action-button">Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="announcements">
+          <h2>Announcements</h2>
+          <div class="announcements-wrapper">
+
+            <div class="announcement">
+              <h4 class="announcement-title">Site Maintenance</h4>
+              <p class="announcement-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              </p>
+            </div>
+
+            <div class="announcement">
+              <h4 class="announcement-title">Community Share Day</h4>
+              <p class="announcement-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              </p>
+            </div>
+
+            <div class="announcement">
+              <h4 class="announcement-title">Updated Privacy Policy</h4>
+              <p class="announcement-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending">
+          <h2>Trending</h2>
+          <div class="trending-wrapper">
+
+            <div class="trending-item">
+              <div>image</div>
+              <div class="trending-data">
+                <p class="trending-name">@tegan</p>
+                <p class="trending-description">World Peace Builder</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <div>image</div>
+              <div class="trending-data">
+                <p class="trending-name">@morgan</p>
+                <p class="trending-description">Super Cool Project</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <div>image</div>
+              <div class="trending-data">
+                <p class="trending-name">@kendall</p>
+                <p class="trending-description">Life Changing App</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <div>image</div>
+              <div class="trending-data">
+                <p class="trending-name">@alex</p>
+                <p class="trending-description">No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Copyright © The Odin Project 2023</p>
+      </div>
+    </div>
 </body>
 </html>
